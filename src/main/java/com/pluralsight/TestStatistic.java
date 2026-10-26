@@ -16,5 +16,19 @@ public class TestStatistic {
         }
         average = (float) sum / length ;
         System.out.println("The average score is " + average);
+
+
+
+        System.out.println("=========== High Score ===========");
+        int highestScore = averageList[0];
+
+        for (int newaverage : averageList) {
+            if (highestScore < newaverage) {
+                highestScore = newaverage;
+                System.out.println("The highest score is " + highestScore);
+            }
+        }
+
+
     }
 }
